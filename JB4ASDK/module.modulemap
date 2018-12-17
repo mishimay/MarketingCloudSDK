@@ -1,0 +1,25 @@
+framework module JB4ASDK {
+    umbrella header "JB4ASDK-Bridging-Header.h"
+    export *
+    module * { export * }
+    link framework "WebKit"
+    link framework "CoreLocation"
+    link framework "UserNotifications"
+    header "ETAnalytics.h"
+    header "ETCloudPage.h"
+    header "ETCloudPageDataSource.h"
+    header "ETEventMessage.h"
+    header "ETEventRegion.h"
+    header "ETGenericUpdate.h"
+    header "ETLandingPagePresenter.h"
+    header "ETLocationManager.h"
+    header "ETMessage.h"
+    header "ETPush.h"
+    header "ETRegion.h"
+    header "ETWKLandingPagePresenter.h"
+    header "ExactTargetEnhancedPushDataSource.h"
+    header "PICart.h"
+    header "PICartItem.h"
+    header "PIOrder.h"
+    header "PushConstants.h"
+}
