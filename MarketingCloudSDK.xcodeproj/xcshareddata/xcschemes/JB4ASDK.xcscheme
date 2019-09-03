@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21FDC976217431690071C0E6"
-               BuildableName = "JB4ASDK.framework"
-               BlueprintName = "JB4ASDK"
-               ReferencedContainer = "container:JB4ASDK.xcodeproj">
+               BuildableName = "MarketingCloudSDK.framework"
+               BlueprintName = "MarketingCloudSDK"
+               ReferencedContainer = "container:MarketingCloudSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21FDC976217431690071C0E6"
-            BuildableName = "JB4ASDK.framework"
-            BlueprintName = "JB4ASDK"
-            ReferencedContainer = "container:JB4ASDK.xcodeproj">
+            BuildableName = "MarketingCloudSDK.framework"
+            BlueprintName = "MarketingCloudSDK"
+            ReferencedContainer = "container:MarketingCloudSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21FDC976217431690071C0E6"
-            BuildableName = "JB4ASDK.framework"
-            BlueprintName = "JB4ASDK"
-            ReferencedContainer = "container:JB4ASDK.xcodeproj">
+            BuildableName = "MarketingCloudSDK.framework"
+            BlueprintName = "MarketingCloudSDK"
+            ReferencedContainer = "container:MarketingCloudSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		21FDC977217431690071C0E6 /* JB4ASDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JB4ASDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FDC977217431690071C0E6 /* MarketingCloudSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarketingCloudSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FDC97B2174316A0071C0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21FDC982217431C40071C0E6 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -16,7 +16,7 @@
 		21FDC96D217431690071C0E6 = {
 			isa = PBXGroup;
 			children = (
-				21FDC979217431690071C0E6 /* JB4ASDK */,
+				21FDC979217431690071C0E6 /* MarketingCloudSDK */,
 				21FDC978217431690071C0E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -24,26 +24,26 @@
 		21FDC978217431690071C0E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21FDC977217431690071C0E6 /* JB4ASDK.framework */,
+				21FDC977217431690071C0E6 /* MarketingCloudSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21FDC979217431690071C0E6 /* JB4ASDK */ = {
+		21FDC979217431690071C0E6 /* MarketingCloudSDK */ = {
 			isa = PBXGroup;
 			children = (
 				21FDC97B2174316A0071C0E6 /* Info.plist */,
 				21FDC982217431C40071C0E6 /* module.modulemap */,
 			);
-			path = JB4ASDK;
+			path = MarketingCloudSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21FDC976217431690071C0E6 /* JB4ASDK */ = {
+		21FDC976217431690071C0E6 /* MarketingCloudSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21FDC97F2174316A0071C0E6 /* Build configuration list for PBXNativeTarget "JB4ASDK" */;
+			buildConfigurationList = 21FDC97F2174316A0071C0E6 /* Build configuration list for PBXNativeTarget "MarketingCloudSDK" */;
 			buildPhases = (
 				21FDC983217431D40071C0E6 /* ShellScript */,
 			);
@@ -51,9 +51,9 @@
 			);
 			dependencies = (
 			);
-			name = JB4ASDK;
+			name = MarketingCloudSDK;
 			productName = JB4ASDK;
-			productReference = 21FDC977217431690071C0E6 /* JB4ASDK.framework */;
+			productReference = 21FDC977217431690071C0E6 /* MarketingCloudSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -70,7 +70,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 21FDC971217431690071C0E6 /* Build configuration list for PBXProject "JB4ASDK" */;
+			buildConfigurationList = 21FDC971217431690071C0E6 /* Build configuration list for PBXProject "MarketingCloudSDK" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -82,7 +82,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21FDC976217431690071C0E6 /* JB4ASDK */,
+				21FDC976217431690071C0E6 /* MarketingCloudSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -103,7 +103,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "BASE_NAME=JB4A-SDK-iOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\ncurl -fsL https://github.com/salesforce-marketingcloud/JB4A-SDK-iOS/archive/v${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/JB4A-SDK/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_DIR}/${TARGET_NAME}/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/JB4A-SDK/libJB4ASDK-4.9.7.21010001.a -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
+			shellScript = "BASE_NAME=MarketingCloudSDK-iOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\nRESOURCES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Resources\ncurl -fsL https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/archive/v${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/MarketingCloudSDK/MarketingCloudSDK.framework/Headers/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${RESOURCES_FOLDER_PATH} && cp -r ${PROJECT_TEMP_ROOT}/${BASE_NAME}/MarketingCloudSDK/*.bundle $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_DIR}/${TARGET_NAME}/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/MarketingCloudSDK/MarketingCloudSDK.framework/MarketingCloudSDK -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -112,7 +112,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CURRENT_PROJECT_VERSION = 4.9.7;
+				CURRENT_PROJECT_VERSION = 6.3.4;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -123,7 +123,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CURRENT_PROJECT_VERSION = 4.9.7;
+				CURRENT_PROJECT_VERSION = 6.3.4;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -133,8 +133,8 @@
 		21FDC9802174316A0071C0E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = JB4ASDK/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.JB4ASDK;
+				INFOPLIST_FILE = MarketingCloudSDK/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.MarketingCloudSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 			};
 			name = Debug;
@@ -142,8 +142,8 @@
 		21FDC9812174316A0071C0E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = JB4ASDK/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.JB4ASDK;
+				INFOPLIST_FILE = MarketingCloudSDK/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.MarketingCloudSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 			};
 			name = Release;
@@ -151,7 +151,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21FDC971217431690071C0E6 /* Build configuration list for PBXProject "JB4ASDK" */ = {
+		21FDC971217431690071C0E6 /* Build configuration list for PBXProject "MarketingCloudSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21FDC97D2174316A0071C0E6 /* Debug */,
@@ -160,7 +160,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21FDC97F2174316A0071C0E6 /* Build configuration list for PBXNativeTarget "JB4ASDK" */ = {
+		21FDC97F2174316A0071C0E6 /* Build configuration list for PBXNativeTarget "MarketingCloudSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21FDC9802174316A0071C0E6 /* Debug */,
